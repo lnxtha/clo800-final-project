@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: e-webapp
+  labels: 
+    app: employees
+spec:
+  type: LoadBalancer
+  ports: 
+    - port: 80
+      targetPort: 81
+  selector: 
+    app: employees
+    
