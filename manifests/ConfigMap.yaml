@@ -6,9 +6,10 @@ data:
   IMAGE_URL: "/image_url"
   DBHOST: "e-mysql"
   DBPORT: "3306"
-  GROUP_NAME: "GROUP10"
-  IMAGE_S3: "https://clo835group05.s3.amazonaws.com/"
+  GROUP_NAME: "GROUP07"
+  IMAGE_S3: "https://finalproject-group7.s3.amazonaws.com/"
   image : |
     {
-      "backgroundimg1" : "https://clo835group05.s3.amazonaws.com/background.jpg"
+      "backgroundimg1" : "https://finalproject-group7.s3.amazonaws.com/cover.jpg"
     }
+
