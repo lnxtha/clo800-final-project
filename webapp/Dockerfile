@@ -6,7 +6,7 @@ RUN set -xe \
     && apt-get update -y \
     && apt-get install -y python3-pip \
     && apt-get install -y mysql-client 
-    && apt install vim -y
+    && apt-get install vim -y
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 EXPOSE 81
