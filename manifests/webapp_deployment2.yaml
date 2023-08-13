@@ -51,5 +51,15 @@ spec:
                 configMapKeyRef:
                   name: webapp-config
                   key: IMAGE_S3
-            
-            
+            - name: image1
+              valueFrom:
+                configMapKeyRef:
+                  name: webapp-config
+                  key: image
+    #       volumeMounts:
+    #         - name: s3-image
+    #           mountPath: /path/to/image  # Replace with the actual path in the container
+    #   volumes:
+    #     - name: s3-image
+    #       persistentVolumeClaim:
+    #         claimName: mysql-pvc  # Use the appropriate PVC name here

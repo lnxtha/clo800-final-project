@@ -11,5 +11,6 @@ data:
   image : |
     {
       "backgroundimg1" : "https://finalproject-group7.s3.amazonaws.com/cover.jpg"
+      
     }
 
