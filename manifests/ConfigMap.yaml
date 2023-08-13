@@ -8,9 +8,5 @@ data:
   DBPORT: "3306"
   GROUP_NAME: "GROUP07"
   IMAGE_S3: "https://finalproject-group7.s3.amazonaws.com/"
-  image : |
-    {
-      "backgroundimg1" : "https://finalproject-group7.s3.amazonaws.com/cover.jpg"
-      
-    }
-
+  image : "https://finalproject-group7.s3.amazonaws.com/cover.jpg"
+  
