@@ -5,7 +5,7 @@ metadata:
   labels:
     app: mysql
 spec:
-  replicas: 1 
+  replicas: 2
   selector:
     matchLabels:
       app: mysql
@@ -15,7 +15,7 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: '387584877503.dkr.ecr.us-east-1.amazonaws.com/finalproject-mysql'
+      - image: 060735095223.dkr.ecr.us-east-1.amazonaws.com/finalproject-mysql:v1.0
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
@@ -23,10 +23,10 @@ spec:
         ports:
         - containerPort: 3306
           protocol: TCP
-        volumeMounts:
-        - name: mysql-database
-          mountPath: /var/lib/mysql
-      volumes:
-      - name: mysql-database
-        persistentVolumeClaim: 
-          claimName: mysql-pvc
+        # volumeMounts:
+        # - name: mysql-database
+        #   mountPath: /var/lib/mysql
+      # volumes:
+      # - name: mysql-database
+      #   persistentVolumeClaim: 
+      #     claimName: mysql-pvc
